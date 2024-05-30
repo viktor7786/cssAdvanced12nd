@@ -1,0 +1,49 @@
+/* Bojenje linkova ka Google sajtovima u zeleno */
+a[href*="google.com"], a[href*="doodles.google.com"] {
+    color: green;
+}
+
+/* Bojenje linka ka LINK group sajtu u crveno */
+a[href*="linkgroup.eu"] {
+    color: red;
+}
+
+/* Naizmenično bojenje paragrafa u second-div elementu */
+#second-div p:nth-of-type(1) {
+    color: red;
+}
+
+#second-div p:nth-of-type(2) {
+    color: blue;
+}
+
+#second-div p:nth-of-type(3) {
+    color: red;
+}
+
+#second-div p:nth-of-type(4) {
+    color: blue;
+}
+
+#second-div p:nth-of-type(5) {
+    color: red;
+}
+
+#second-div p:nth-of-type(6) {
+    color: blue;
+}
+
+#second-div p:nth-of-type(7) {
+    color: red;
+}
+
+/* Dodavanje teksta NEW na krajeve Paragrafa 2 i Paragrafa 3 u okviru glavnog sadržaja */
+body > p:nth-of-type(2)::after, body > p:nth-of-type(3)::after {
+    content: " NEW";
+    color: yellow;
+}
+
+/* Italic tekst kod prelaska miša preko Paragraph 10 unutar second-div */
+#second-div p:nth-of-type(7):hover {
+    font-style: italic;
+}
